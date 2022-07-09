@@ -9,6 +9,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class HowGoodAreYouReally {
 
+    // Code from problem https://www.codewars.com/kata/5601409514fc93442500010b
+
+    // Get if number is >= average numbers in array (including itself)
     @Test
     void codeToWork() {
         assertEquals(true, betterThanAverage(new int[] {2, 3}, 5));
@@ -17,6 +20,7 @@ public class HowGoodAreYouReally {
         assertEquals(false, betterThanAverage(new int[] {100, 90}, 11));
     }
 
+    // FIRST SOLUTION
     public static boolean betterThanAverage(int[] classPoints, int yourPoints) {
         double accumulator = 0;
         for (int classPoint : classPoints) {

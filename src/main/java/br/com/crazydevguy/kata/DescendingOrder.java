@@ -12,6 +12,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class DescendingOrder {
 
+    // Code from problem https://www.codewars.com/kata/5467e4d82edf8bbf40000155
+
+    // Take any non-negative integer as an argument and return it with its digits in descending order
     @Test
     void codeToWork() {
         assertEquals(0, DescendingOrder.sortDesc(0));
@@ -27,8 +30,9 @@ public class DescendingOrder {
         assertEquals(987654321, DescendingOrder.bestSortDesc02(123456789));
     }
 
+    // FIRST SOLUTION
     public static int sortDesc(final int num) {
-        Object[] chars = String.valueOf(num).chars().mapToObj(e -> (char)e).collect(Collectors.toList()).toArray();
+        Object[] chars = String.valueOf(num).chars().mapToObj(e -> (char) e).toList().toArray();
 
         Arrays.sort(chars, Collections.reverseOrder());
 
@@ -39,9 +43,10 @@ public class DescendingOrder {
         }
 
 
-        return Integer.valueOf(convertedCharsToString);
+        return Integer.parseInt(convertedCharsToString);
     }
 
+    // BETTER SOLUTION
     public static int bestSortDesc01(final int num) {
         return Integer.parseInt(String.valueOf(num)
                 .chars()
@@ -50,6 +55,7 @@ public class DescendingOrder {
                 .collect(Collectors.joining()));
     }
 
+    // BETTER SOLUTION 2
     public static int bestSortDesc02(final int num) {
         String[] array = String.valueOf(num).split("");
         Arrays.sort(array, Collections.reverseOrder());
