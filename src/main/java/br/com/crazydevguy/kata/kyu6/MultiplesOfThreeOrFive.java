@@ -1,4 +1,4 @@
-package br.com.crazydevguy.kata;
+package br.com.crazydevguy.kata.kyu6;
 
 import org.junit.jupiter.api.Test;
 
