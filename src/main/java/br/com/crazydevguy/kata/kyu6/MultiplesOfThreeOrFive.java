@@ -10,9 +10,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class MultiplesOfThreeOrFive {
 
-    // Code from problem https://www.codewars.com/kata/514b92a657cdc65150000006
+    /**
+      Code from problem https://www.codewars.com/kata/514b92a657cdc65150000006
 
-    // Sum of all the multiples of 3 or 5 below the number passed in (if negative, return 0)
+      Sum of all the multiples of 3 or 5 below the number passed in (if negative, return 0)
+     **/
     @Test
     void codeToWork() {
         assertEquals(23, solution(10));
