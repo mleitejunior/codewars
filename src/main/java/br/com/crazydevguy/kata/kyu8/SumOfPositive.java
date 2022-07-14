@@ -9,9 +9,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SumOfPositive {
 
-    // Code from problem https://www.codewars.com/kata/5715eaedb436cf5606000381
+    /**
+    Code from problem https://www.codewars.com/kata/5715eaedb436cf5606000381
 
-    // Sum of only positive numbers from array
+    Sum of only positive numbers from array
+    **/
     @Test
     void codeToWork() {
         assertEquals(15, sum(new int[]{1,2,3,4,5}));

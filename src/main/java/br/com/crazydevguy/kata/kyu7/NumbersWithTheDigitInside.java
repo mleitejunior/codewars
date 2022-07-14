@@ -12,14 +12,16 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class NumbersWithTheDigitInside {
 
-    // Code from problem https://www.codewars.com/kata/57ad85bb7cb1f3ae7c000039
+    /**
+     Code from problem https://www.codewars.com/kata/57ad85bb7cb1f3ae7c000039
 
-    // You have to search all numbers from inclusive 1 to inclusive a given number x, that have the given digit d in it.
-    // You have to return as an array:
-    //
-    //  - the count of these numbers,
-    //  - their sum
-    //  - and their product.
+     You have to search all numbers from inclusive 1 to inclusive a given number x, that have the given digit d in it.
+     You have to return as an array:
+
+      - the count of these numbers,
+      - their sum
+      - and their product.
+    **/
     @Test
     void codeToWork() {
         assertArrayEquals(new long[] { 0, 0, 0 }, numbersWithDigitInside(5, 6));

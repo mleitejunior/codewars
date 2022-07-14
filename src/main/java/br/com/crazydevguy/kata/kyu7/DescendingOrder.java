@@ -12,9 +12,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class DescendingOrder {
 
-    // Code from problem https://www.codewars.com/kata/5467e4d82edf8bbf40000155
-
-    // Take any non-negative integer as an argument and return it with its digits in descending order
+    /**
+     Code from problem https://www.codewars.com/kata/5467e4d82edf8bbf40000155
+     Take any non-negative integer as an argument and return it with its digits in descending order
+     **/
     @Test
     void codeToWork() {
         assertEquals(0, DescendingOrder.sortDesc(0));

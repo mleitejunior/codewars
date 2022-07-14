@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class BuildTower {
 
     /**
-      Code from problem https://www.codewars.com/kata/576757b1df89ecf5bd00073b
+     Code from problem https://www.codewars.com/kata/576757b1df89ecf5bd00073b
 
      Build a pyramid-shaped tower given a positive integer number of floors. A tower block is represented with "*" character.
 
